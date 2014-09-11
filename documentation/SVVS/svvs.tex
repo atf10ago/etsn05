@@ -52,13 +52,45 @@ Bacon ipsum dolor sit amet filet mignon tri-tip spare ribs flank pastrami beef. 
 
 \end{enumerate}
 
+\section{Granskning}
+Vilka typer av granskningar ska genomföras, vilka dokument ska granskas och när dessa dokument eller andra granskningar ska genomföras.
+
+\section{Test}
+
 \section{Något mer...}
 Bacon ipsum dolor sit amet drumstick pastrami t-bone frankfurter, shank tri-tip fatback. Flank sirloin frankfurter shoulder turducken brisket chicken bresaola landjaeger ham fatback doner pancetta. Bresaola brisket bacon pork loin flank pig. Pork belly shank ground round meatloaf boudin, meatball filet mignon kielbasa turducken short loin sausage leberkas landjaeger. Kielbasa andouille ball tip, meatloaf ground round pastrami meatball spare ribs bacon shank shoulder short ribs tail. Chuck jerky chicken beef tail biltong. Ham brisket pork chop drumstick shankle pancetta tongue bacon shank filet mignon turkey ribeye pork belly prosciutto.
 
 \begin{appendices}
 
-\section{Bacon}
-Chuck sausage tri-tip pork, turducken spare ribs shoulder ham hock brisket ham rump pig shankle. Rump shank flank, kevin ribeye bresaola brisket meatball turkey. Rump landjaeger brisket pork loin drumstick pig ball tip corned beef shankle. Tenderloin jerky pig corned beef bacon strip steak ground round venison. Ground round beef ribs flank venison capicola pig drumstick kevin short loin pork loin turducken pastrami spare ribs. Shank swine short loin, strip steak pork chop ham spare ribs andouille pork shoulder corned beef.
+\section{FunktionstestSpecifikation}
+\begin{enumerate}
+\item Krav: 6.1.2
+Testa att skicka in data sekvenser innehållande slumpmässiga kombinationer av tecken, siffror, bokstäver och icke synliga tecken (blanksteg, retur etc).
+Detta ska göras på alla platser där en användare har möjlighet att mata in information, ex login, tidsrapportering etc. Detta test ska genomföras i verklig miljö.
+
+\item Krav: 6.1.3
+Testa multipla personer som loggar in och använder systemet samtidigt, ska göras i verklig miljö.
+
+\item Krav: 6.2.1
+Testa att logga in med ett registrerat konto (användarnamn och lösenord), ska göras i verklig miljö
+
+\item Krav: 6.2.2
+En användare som är registrerad på systemet ska logga in och sedan byta lösenord. 
+Därefter ska användaren logga ut och sedan logga in med det nya lösenordet, detta test ska ske i verklig miljö.
+
+\item Krav: 6.2.3
+En användare som är registrerad i systemet ska logga in och sedan förbli inaktiv, efter 15 minuter ska användaren
+försöka göra någon ändring av sin registrerade data i systemet och se att detta inte tillåts. Testet ska göras i verklig miljö.
+
+\item Krav: 6.2.4
+En användare loggar först in från en dator och låter sig förbli inloggad. Sedan loggar samma person in med samma användare på
+en annan dator och kontrollerar att det korrekta meddelandet om utloggning skedde på den första datorn, samt att ändringar inte kan utföras
+på den datorn, testet måste genomföras så att 15 minuters utloggningsregeln inte trädit i kraft. Testet ska genomföras i verklig miljö.
+\end{enumerate}
+
+\section{Systemtestspecifikation}
+
+\section{Regressionstestspecifikation}
 
 \end{appendices}
 
